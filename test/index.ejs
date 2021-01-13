@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%-title%> </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
+<body>
+  <p  href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">chat app</p>
+  <button id="buton1" type="button" class="btn btn-primary">Increment</button>
+  <br><br>  
+  <form   id="msgform" class="form1">
+    <!-- <input type="text" name="" id="textinput1"><br> -->
+    <textarea name="t1"   id="textarea1" cols="30" rows="5"></textarea>
+    <br>
+   <button name="b1" type="submit" class="btn btn-primary" id="butonsend">send text</button>   
+  </form>
+  <br>
+  <button name="b2" type="button" class="btn btn-primary" id="find-me">Share location</button>   
+  <p id = "status"></p>  
+  <a id = "map-link" target="_blank"></a>
+<!-- <p>template ejs de la server: <%-msgEjs%> </p> -->
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script> -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/javascripts/script.js"></script>
+</body>
+</html>        
